@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Great+Vibes&family=Indie+Flower&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Stack elements vertically */
+  background-image: url("https://images.unsplash.com/photo-1514027818507-d55a1ec83779?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  /* Add overflow: hidden to remove scrollbar */
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1; /* Takes up available space */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  /* margin-top: 10vh; Adjust margin as needed */
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  margin-top: 5vh; /* Adjust margin as needed */
+  text-align: center;
+  font-family: Lobster, sans-serif;
+  font-size: 4vw;
+  color: #c9c9c9;
+}
+
+p {
+  position: relative;
+  text-align: center;
+  font-family: Lobster, sans-serif;
+  color: #c9c9c9;
+  font-size: 3vw;
+  margin-top: 50vh;
+}
+
+.button {
+  margin-top: 5%;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: 100px;
+  padding: 2.2vw 3.3vw;
+  font-family: "Lobster", cursive;
+  font-size: 2.6vw;
+  line-height: 26px;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+  background: #460004;
+  outline: none;
+  border-radius: 15px;
+  border: 1px solid #4c0300;
+  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.25),
+    /* highlight */ inset 0 0 6px #4c0006,
+    /* inner glow */ inset 0 80px 80px -40px #ac3223,
+    /* gradient */ 1px 1px 3px rgba(0, 0, 0, 0.75); /* shadow */
+
+  position: relative;
+  overflow: visible; /* IE9 & 10 */
+  -webkit-transition: 500ms linear;
+  -moz-transition: 500ms linear;
+  -o-transition: 500ms linear;
+  transition: 500ms linear;
+}
+
+.button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -7px;
+  left: -3px;
+  right: 0;
+  height: 23px;
+}
+.button:hover {
+  background: #8c0220;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75), 0 0 40px #fff;
+  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.25),
+    /* highlight */ inset 0 0 6px #b22a44,
+    /* inner glow */ inset 0 80px 80px -40px #a31936,
+    /* gradient */ 1px 1px 3px rgba(0, 0, 0, 0.75); /* shadow */
+}
+.button:focus {
+  outline: none; /*FF*/
+}
+.button:active {
+  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.25),
+    /* highlight */ inset 0 0 6px #b22a44,
+    /* inner glow */ inset 0 80px 80px -40px #a31936,
+    /* gradient */ 0px 1px 0px rgba(255, 255, 255, 0.25); /* shadow */
+
+  -webkit-transition: 50ms linear;
+  -moz-transition: 50ms linear;
+  -o-transition: 50ms linear;
+  transition: 50ms linear;
+}
+
+/* other styles */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.bg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centerer {
+  display: table-cell;
+  vertical-align: center;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: fit-content;
+  font-family: Lobster, sans-serif;
+  color: #fff;
+  padding: 0 40px 40px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.gifts {
+  max-width: 70vw;
+}
+
+.gift-container {
+  display: flex; /* Enable flexbox for the container */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+}
+
+.gift-button {
+  text-align: center;
+  margin-top: 70vh; /* Push button to bottom of container */
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+
+  .button {
+    padding: 2.5vw 4vw;
+    font-size: 2.8vw;
+    width: 45%; /* Adjust the width as needed */
+    max-width: 200px; /* Set a maximum width to prevent excessive width */
+    margin: 20px auto; /* Center the button horizontally */
+  }
+}
+
+@media (max-width: 768px) {
+  .gift-button {
+    width: 80%; /* Adjust the width as needed */
+    font-size: 18px; /* Adjust the font size */
+  }
+}
