@@ -160,7 +160,7 @@ footer {
 
 .gift-button {
   text-align: center;
-  margin-top: 70vh; /* Push button to bottom of container */
+  margin-top: 80vh; /* Push button to bottom of container */
 }
 
 @media screen and (max-width: 768px) {
